@@ -10,7 +10,7 @@ html{
     box-sizing: border-box;
 }
 :root{
-    --primary-color:black; 
+    --primary-color:black;
     --secondary-color:cyan;
 }
 #service{
@@ -137,7 +137,7 @@ h3
 text-align: center;
 color: white;
 font-weight: 600;
-text-shadow: 2px 2px 40px var(--secondary-color);
+/* text-shadow: 2px 2px 40px var(--secondary-color); */
 font-size: 40px;
 
 }
@@ -180,6 +180,7 @@ position: absolute;
 
 .header
 {
+    position: fixed;
    display: inline-flex;
     top: 0; 
     left: 0;
@@ -193,8 +194,8 @@ position: absolute;
     z-index: 100; 
 }
 .home-content h1{
-    font-size: 190px;
-    line-height: 160px;
+    font-size: 150px;
+    line-height: 100px;
     color: transparent;
     -webkit-text-stroke:  1px #ededed;
     animation: slideright 2s ease forwards;
@@ -287,6 +288,7 @@ i.bx.bx-moon.bx-tada{
    color: gold;
 }
 .home{
+    position: relative;
  display: flex;
  align-items: center;
  height: 100vh;
@@ -312,8 +314,11 @@ i.bx.bx-moon.bx-tada{
     text-shadow: 2px 2px 40px var(--secondary-color)cyan;
     position: relative;
 }
+
 .home-content .motion1{
     font-size: 70px;
+    line-height: 100px;
+    /* color: white; */
   
     
 }
@@ -370,6 +375,7 @@ align-items: center;
 .home-content .motion1{
    font-size:38px;
    margin-left: 10px;
+   color: white;
 }
  .home-content .motion2{
     font-size:35px;
