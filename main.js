@@ -1,20 +1,20 @@
-var typed =new Typed ('.motion1',
+var typed= new Typed(".motion1",
 {
-    strings:["Hi,I'm Aditya Saini",'नमस्ते मैं आदित्य सैनी।'],
-    typeSpeed:80,
-    backSpeed:40,
-    lay:0,
+    strings:["Hi,I'm Aditya Saini",''],
+    typeSpeed:100,
+    backSpeed:100,
+    backDelay:1000,
     loop:true
 }
 );
 var typed =new Typed ('.motion2',
 {
-    strings:['Frontend Developer',' Ethical Hacker'],
-    typeSpeed:80,
-    backSpeed:40,
-    lay:0,
+    strings:['Web Developer',' Java developer'],
+    typeSpeed:100,
+    backSpeed:100,
+    backDelay:1000,
     loop:true
-}
+} 
 );
 
 // var typed =new Typed ('.logo',
