@@ -9,23 +9,35 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>    <title>portfolio aditya</title>
 </head>
 <body> 
-   <header class="header"> 
-    <a href="https://www.google.com/search?q=animated+background+image+creator&oq=&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxjCAzIJCAAQRRg7GMIDMg4IARAAGAMYQhiPARjqAjIOCAIQABgDGEIYjwEY6gIyDggDEAAYAxhCGI8BGOoCMg4IBBAAGAMYQhiPARjqAjIOCAUQABgDGEIYjwEY6gIyDggGEAAYAxhCGI8BGOoCMgwIBxAuGAMYjwEY6gLSAQkzNzI3ajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8" class="logo">Aditya's portfolio</a>
-    
-    <nav class="navbar">
-        <a href="#" class="active">Home</a>
-        <a href="#">About</a>
-        <a href="#">Service</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
-    </nav>
-   </header>
+    <header class="header"> 
+        <a href="https://www.google.com/search?q=animated+background+image+creator&oq=&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxjCAzIJCAAQRRg7GMIDMg4IARAAGAMYQhiPARjqAjIOCAIQABgDGEIYjwEY6gIyDggDEAAYAxhCGI8BGOoCMg4IBBAAGAMYQhiPARjqAjIOCAUQABgDGEIYjwEY6gIyDggGEAAYAxhCGI8BGOoCMgwIBxAuGAMYjwEY6gLSAQkzNzI3ajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8" class="logo">Aditya's portfolio</a>
+        
+        
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="ham-menu"><i class='bx bx-menu-alt-left' style='color:#0ee0cb'  onclick="hamburg()" ></i></box-icon></div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+                <div><i class='bx bxs-chevron-left' style='color:#0ee0cb' onclick="cancel()" ></i></div>
+            </div>
+           
+        </div>
+</header>
+
+   
    <span class="text1"></span>
    <section class="home">
     <div class="home-content">
-        <!-- <h3>Hello ,It's Me</h3>
-        <h1>Aditya Saini</h1>
-        <h3>And I am</h3> -->
         <h1 class="motion1"></h1>
         <span class="motion2"></span>
         <p class="intro">Hello! I'm Aditya Saini, a computer science student  based in Kanpur Uttar Pradesh ,who's expertise i fullstack application from scratch to production
@@ -43,7 +55,17 @@
     <div class="portimg">    
         <img  src="portfolio-modified.png" alt="" width="500" height="500">
     </div>
-</section>
+    <div class="portimgSmall">    
+        <img  src="portfolio-modified.png" alt="" width="400" height="400">
+        
+    </div>
+   
+<!-- <section class="education">
+    <h1>Education</h1>
+</section> -->
+
+ </section>
+
 <section>
     <div class="social-icon">
      <a href="http://www.linkedin.com/in/Aditya-saini-4ab21a242"><i class='bx bxl-linkedin'></i></a>
@@ -51,6 +73,7 @@
      <a href="https://instagram.com/_aaditya__saini_?igshid=MzMyNGUyNmU2YQ=="><i class='bx bxl-instagram'></i></a>   
  </div>
  </section>
+ 
 <!-- <section >
 
     <div class="num-count">
@@ -76,29 +99,27 @@
 <!--    -->
 <section >
     
-    <!-- <h1 class="edu-head"><i class='bx bxs-graduation bx-tada ' style='color:white' ></i> Education</h1>
+    <h1 class="edu-head"><i class='bx bxs-graduation bx-tada ' style=' color:rgb(255, 255, 255)' ></i> Education</h1>
     <div class="education">
     <p>Here are my educational qualifications : </p>
     </p>
-    <h3>Graduation:-(persuing)</h3>
-    <br>
-    <h4>B.TECH<br>(Artificial Intelligence And Machine learning)</h4>
-    <p><br>AXIS INSTITUTE OF TECHNOLOGY AND MANAGEMENT
+    <h4>B.Tech  <br>(Artificial Intelligence And Machine learning)</h4>
+    <div class="edudetail">
+    <p>AXIS INSTITUTE OF TECHNOLOGY AND MANAGEMENT
     <br>2021-2025</p>
-    <br>
-    <h3>Higher Secondary Certificate</h3>
-    <br>
+</div>
+<div class="edudetail">
+   
     <h4>Indian School Certificate(ISC)</h4>
-    <p><br>Mother Teresa Higher Secondary School
+    <p>Mother Teresa Higher Secondary School
     <br>2021-2025</p>
-    
-    <br>
-    <h3>Higher Secondary Certificate</h3>
-    <br>
+</div>
+    <div class="edudetail">
     <h4>The Indian Certificate of Secondary Education(ICSE)</h4>
-    <p><br>Mother Teresa Higher Secondary School
+    <p>Mother Teresa Higher Secondary School
     <br>2021-2025</p>
-</div> -->
+</div>
+</div>
 </section>
 
 
