@@ -440,6 +440,11 @@ h3{
 .portimgSmall{
     display: none;
    }
+.newmotion1 {
+display: none;
+}
+. newmotion2 
+ {display:none;}
 @media only screen and (max-width:1080px) 
 {
 
@@ -605,6 +610,24 @@ align-items: center;
     }
     .home-content .motion2{
         font-size: 30px;
+        font-weight: 600;
+        font-family:'Courier New', Courier, monospace;
+        color: var(--secondary-color);
+        /* line-height: 1.2; */
+        text-shadow: 2px 2px 40px var(--secondary-color)cyan;
+        position: relative;
+    }
+    .home-content .newmotion1{
+display: content;
+        font-size: 30px;
+        /* line-height: 100px; */
+        /* color: white; */
+      
+        
+    }
+    .home-content .newmotion2{
+        font-size: 30px;
+display: content;
         font-weight: 600;
         font-family:'Courier New', Courier, monospace;
         color: var(--secondary-color);
