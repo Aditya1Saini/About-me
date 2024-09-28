@@ -1,128 +1,804 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>    <title>portfolio aditya</title>
-</head>
-<body> 
-    <header class="header"> 
-        <a href="https://www.google.com/search?q=animated+background+image+creator&oq=&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxjCAzIJCAAQRRg7GMIDMg4IARAAGAMYQhiPARjqAjIOCAIQABgDGEIYjwEY6gIyDggDEAAYAxhCGI8BGOoCMg4IBBAAGAMYQhiPARjqAjIOCAUQABgDGEIYjwEY6gIyDggGEAAYAxhCGI8BGOoCMgwIBxAuGAMYjwEY6gLSAQkzNzI3ajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8" class="logo">Aditya's portfolio</a>
-        
-        
-        <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Service</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
-        </nav>
-        <div class="ham-menu"><i class='bx bx-menu-alt-left' style='color:#0ee0cb'  onclick="hamburg()" ></i></box-icon></div>
-        <div class="dropdown">
-            <div class="links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Service</a>
-                <a href="#">Contact</a>
-                <div><i class='bx bxs-chevron-left' style='color:#0ee0cb' onclick="cancel()" ></i></div>
-            </div>
-           
-        </div>
-</header>
 
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+  /* *{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+
+} */
+:root{
+    --primary-color:black;
+    --secondary-color:cyan;
+}
+#service{
+    color: white;
+    font-size: 25px;
+    text-align: left;
+}
+
+.day-light{
+    --primary-color:white;
+    --secondary-color:cyan;
+    /* background-color: white; */
+}
+body{
+  /*background-color:rgb(0, 0, 0);*/
+    /* color: rgb(246, 237, 237); */
+    background-color:var(--primary-color);
+   /* background: linear-gradient(to left, #6600cc 32%, #cc33ff 68%);*/
+/* background-image: url('portfolio-modified.png');
+align-items: right;
+background-repeat: no-repeat;
+
+*/
+}
+.container-1 {
+    margin: 100px auto;
+    width: 500px;
+    text-align: center;
+  }
+  .container-2{
+    margin: 100px auto;
+    width: 500px;
+    text-align: center;
+  }
+  .container-3 {
+    margin: 100px auto;
+    width: 500px;
+    text-align: center;
+  }
+  .container-4   {
+    margin: 100px auto;
+    width: 500px;
+    text-align: center;
+  }
+  .progress {
+    padding: 6px;
+    background:white;
+    border-radius: 50px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  }
+  .progress-bar {	
+    height: 12px;
+      background-color: #ee303c;  
+    border-radius: 50px; 
+    transition: 0.4s linear;  
+    transition-property: width, background-color;    
+  }
+  .progress-striped .progress-bar { 	
+    background-color: #FCBC51; 
+    width:60%; 
+    background-image: linear-gradient(
+          45deg, rgb(252,163,17) 25%, 
+          transparent 25%, transparent 50%, 
+          rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+          transparent 75%, transparent); 
+    animation: progressAnimationStrike 6s;
+  }
+  
+  @keyframes progressAnimationStrike {
+       from { width: 0 }
+       to   { width: 60% }
+  }
    
-   <span class="text1"></span>
-   <section class="home">
-    <div class="home-content">
-        <h1  class="motion1"></h1>
-        <span class="motion2"></span>
-        <p class="intro">Hello! I'm Aditya Saini, a computer science student  based in Kanpur Uttar Pradesh ,who's expertise i fullstack application from scratch to production
-        <br>I am currently attending  AXIS INSTITUTE OF MANAGEMENT AND TECHNOLOGY as a computer science major and working at fullstack labs
-        </p>
-       <!-- <div class="btn-container">
-        </div> -->
-        <!-- <div class="btn-box">
-            <button
-            class="btn btn-color-2"
-            onclick="window.open('')">Download CV</button>
-            <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-            </div> -->
-    </div>
-    <div class="portimg">    
-        <img  src="portfolio-modified.png" alt="" width="500" height="500">
-    </div>
-    <div class="portimgSmall">    
-        <img  src="portfolio-modified.png" alt="" width="300" height="300">
-        
-    </div>
-   
-<!-- <section class="education">
-    <h1>Education</h1>
-</section> -->
 
- </section>
+.aboutimg{
+    margin-top: 30px;
+    width:60vh;
+    height:60vh;
+    background-image: url("aboutport1.png");
+    background-size: 100% 100%;
+    animation: image-motion 10s linear infinite ;
 
-<section>
-    <div class="social-icon">
-     <a href="http://www.linkedin.com/in/Aditya-saini-4ab21a242"><i class='bx bxl-linkedin'></i></a>
-     <a href="https://wa.link/2nnxli"><i class='bx bxl-whatsapp'></i></a> 
-     <a href="https://instagram.com/_aaditya__saini_?igshid=MzMyNGUyNmU2YQ=="><i class='bx bxl-instagram'></i></a>   
- </div>
- </section>
- 
-<!-- <section >
+}
+.mode{
 
-    <div class="num-count">
-        <div class="counter">
-            <h2 class="count">6000+</h2>
-            <p>completed projects</p>
-        </div>
-        <div class="counter">
-            <h2 class="count">5000+</h2>
-            <p>connections</p>
-        </div>
-        <div class="counter">
-            <h2 class="count">1000+</h2>
-            <p>Happy customers</p>
-        </div>
-        <div class="counter">
-            <h2 class="count">2000+</h2>
-            <p>joined people</p>
-        </div>
-    </div>
-</section> -->
+ --primary-color:white;
+    --secondary-color:cyan;
+}
+.intro{
+    font-size:40px;
+    padding-bottom: 15px;
+    box-sizing:unset;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 15px;
+    color: white;
+}
+.portimg{
+float:right;
+display: left;
+margin-left: auto;
+margin-right: 84px;
+animation:linear ;
+/*box-shadow:  2px 2px  20px red ;*/
+scroll-behavior:smooth;
+animation: slideupward 3s ease forwards ;
+z-index:10 0;
+cursor: pointer;
+}
 
-<!--    -->
-<section >
+.portimg:hover{
+   /* background: linear-gradient(to left, #6600cc 32%, #cc33ff 68%);*/
+    /* background-color: #6600cc;*/
+    opacity:.2;
+   border-radius:110%;
+   -webkit-border-radius: 50% red;
+   box-shadow: 2px 2px 40px var(--secondary-color);
+   animation: slideupward 3s ease forwards;
+   /* transform: scale(1.2); */
+   z-index: 100;
+
+}
+h3 
+{ 
+/* text-align: center; */
+color: white;
+font-weight: 100;
+/* text-shadow: 2px 2px 40px var(--secondary-color); */
+font-size: 30px;
+
+}
+.p-about
+{
+    /* display:contents; */
+    position: relative;
+    /* background-color: transparent; */
+    font-size: 25px;
+    color: white;
+padding: 40px 50px 50px 40px;
+/*margin: 15px 0px 30px ;*/
+margin-left: 500px;
+line-height: 2;
+float: right;
+margin-top: 40px;
+/* animation: slideupward 3s ease forwards; */
+}
+.p-about:hover{
+    position: relative;
+    /* opacity:.2; */
+    border-radius:80%;
+     /* box-shadow: 2px 2px 40px rgb(28, 141, 141);  */
+     /* filter: text-shadow (20px 20px 80px rgb(28, 141, 14)); */
     
-    <h1 class="edu-head"><i class='bx bxs-graduation bx-tada ' style=' color:rgb(255, 255, 255)' ></i> Education</h1>
-    <div class="education">
-    <p>Here are my educational qualifications : </p>
-    </p>
-    <h4>B.Tech  <br>(Artificial Intelligence And Machine learning)</h4>
-    <div class="edudetail">
-    <p>AXIS INSTITUTE OF TECHNOLOGY AND MANAGEMENT
-    <br>2021-2025</p>
-</div>
-<div class="edudetail">
+}
+/* .slide{
+    position: absolute;
+    /* display: grid; 
+    width: 60%;
+    height: 600px;
+    background-image: url("portfolio-modified.png");
+    background-size: 100% 100%;
+   animation: image-motion 10s  linear infinite;
+/* }  
+.slide{
+position: absolute;
+
+} */
+
+.header
+{
+    position: fixed;
+   display: inline-flex;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 15vh;
+    background-color: transparent;
+    padding: 20px 0px;     
+    /* display: block; */
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100; 
+}
+.home-content h1{
+    font-size: 150px;
+    line-height: 100px;
+    color: transparent;
+    -webkit-text-stroke:  1px #ededed;
+    animation: slideright 2s ease forwards;
+
+}
+.logo
+{   position: relative;
+  background:transparent;
+   font-size: 35px;
+    font-family: -webkit-body;
+   color: white;
+    text-decoration: none;
+    font-weight: 600;
+    animation: slidecolor 1s ease forwards ;
+    margin-left: 20px;
+
+
+}
+.home-content h1::before{
+    content: '';
+     position: absolute;
+     top:0;
+     right: 0;
+     height: 100%;
+     width: 100%;
+     animation: slideright 1s ease forwards;
+     animation-delay:1s ;
+}
+
+.navbar
+{
+    
+    position: relative;
+   display: inline-block;
+    font-size: 20px;
+    color:var(--primary-color);
+    text-decoration: none;
+    font-weight:500;
+   margin-left: 45px;
+  /* margin: 10px 30px;*/
+    transition: .3s;
+   list-style: none;
+    align-items: right;
+  /* text-align:left;*/
+  padding-right: 30px;   
+  animation: slideupward 3s ease forwards ;
+  
+    
+}
+.navbar a{
+    color: white; 
+    text-decoration: none;
+    position: relative;
+    justify-items:space-around;
+    margin-left: 20px;
+    
+}
+.navbar a::after
+{
    
-    <h4>Indian School Certificate(ISC)</h4>
-    <p>Mother Teresa Higher Secondary School
-    <br>2021-2025</p>
-</div>
-    <div class="edudetail">
-    <h4>The Indian Certificate of Secondary Education(ICSE)</h4>
-    <p>Mother Teresa Higher Secondary School
-    <br>2021-2025</p>
-</div>
-</div>
-</section>
+   content: '';
+   width: 0;
+   height: 3px;
+   position: absolute;
+   left: 50%;
+   bottom: -5px;
+   transform: translateX(-50%);
+   background: white;
+  transition: width .2s;
+  color: red(10, 214, 214);
+}
+.navbar a:hover::after{
+width: 50%;
+background-color: var(--secondary-color);
+
+}
+.navbar a.active
+{
+    color:var(--secondary-color);
+    position: relative;
+}
+.dropdown{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(4px) brightness(40%);
+    box-shadow:  0 0 20px black;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a{
+    display: flex;
+    font-weight: 200;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a:hover{
+    background-color: rgb(19, 180, 180);
+}
+
+#mode{
+    
+    cursor: pointer;
+
+}
+i.bx.bx-moon.bx-tada{
+    font-size: 25px;
+    font-weight: 400;
+   /* color: rgb(10, 214, 214); */
+   color: gold;
+}
+.home{
+    position: relative;
+ display: flex;
+ align-items: center;
+ height: 100vh;
+ pad: 0 10%;
+ font-size: larger;
+ 
+}
+.home-content
+{
+    max-width: 900px;
+  margin-left: 20px;
+   
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+.home-content .motion2{
+    font-size: 45px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    line-height: 1.2;
+    text-shadow: 2px 2px 40px var(--secondary-color)cyan;
+    position: relative;
+}
+
+.home-content .motion1{
+    font-size: 70px;
+    line-height: 100px;
+    /* color: white; */
+  
+    
+}
+.home-content p{
+    font-size:18px;
+   margin: 20px 0 40px;
+}
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+.btn-box .nth-child1, 
+.btn-box .nth-child2
+{
+    background-color: transparent;
+    color: #00abf0;
+   
+    }
+.btn-box .nth-child2:hover,.btn-box .nth-child1:hover{
+  color:white;
+  box-shadow: 2px 2px 40px var(--secondary-color);
+  
+} 
+.closebtn,.menubtn {
+font-size: 28px;
+margin:0px 20px;
+color: white;
+display:none;
+}
+/* education section here */
+.edu-head
+{
+    text-align: center;
+
+}
+h1{ 
+    color: white;
+    font-size: 50px;
+}
+h4{
+    color: cyan;
+    font-size:25px;
+    animation: slideright 1s ease-in-out ;
+}
+h3{
+    color: white;
+    font-size: 100px;
+
+}
+.edudetail{
+    color: white;
+}
+/* drop down  */
+
+.dropdown
+{
+    font-weight: 200;
+    float: right;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(4px) brightness(40%);
+    box-shadow:  0 0 20px white;
+    transition: 0.2s linear;
+}
+.dropdown .links a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a:hover{
+    background-color: cyan;
+}
+.ham-menu{
+    display: none;
+    font-size:40px;
+    cursor: pointer;
+}
+/*  image port */
+.portimgSmall{
+    display: none;
+   }
+@media only screen and (max-width:1080px) 
+{
 
 
-    <script src="main.js"></script>
-</body>
-</html>
+}
+
+@media only screen 
+and (min-device-width: 320px)
+and (max-device-width:480px)
+{
+.navbar {
+ flex-direction: row;
+ padding: 10px 0px;
+ background-color: #00abf0;
+}
+.aboutimg
+
+{
+    margin-top: 30px;
+    width:60vh;
+    height:60vh;
+    background-image: url("aboutport1.png");
+    background-size: 50% 50%;
+    animation: image-motion 10s linear infinite ;
+
+
+}
+.social-icon{
+    /* display: none; */
+}
+} 
+@media only screen and (max-width:700px) 
+{   
+    .ham-menu{
+        display:flex;
+    }
+    
+    #menu{
+        display:none; 
+        width: 100%;
+        background:transparent;
+        position:relative;
+        top:50px;
+        text-align: center;  
+        right:20px;  
+    }
+.menubtn{
+    display:block;
+}
+.logo{
+    font-size: 40px;
+    position: relative;
+    margin-left: 50px;
+}
+.navbar
+{
+   display: none;
+}
+.navbar a:hover{
+    width: 50%;
+background-color:transparent;
+align-items: center;
+
+}
+.home-content .motion1{
+   font: size 40px;
+   /* margin-left: 3px; */
+   color: white;
+}
+ .home-content .motion2{
+    font-size:35px;
+}
+.home-content .intro{
+    font-size: 10px;
+    
+}
+.header{
+    font-size:2vh;
+}
+.portimg:hover{
+    /* background: linear-gradient(to left, #6600cc 32%, #cc33ff 68%);*/
+     /* background-color: #6600cc;*/
+     opacity:.2;
+    border-radius:110%;
+    -webkit-border-radius: 50% red;
+    box-shadow: 2px 2px 40px var(--secondary-color);
+    animation: slideupward 3s ease forwards;
+    /* transform: scale(1.2); */
+    z-index: 100;
+    
+}
+ .portimg{
+    max-width: 300px;
+    max-height: 300px;
+    align-items: center;
+    
+}
+.portimg {
+    display: none;
+}
+.portimgSmall{
+    display:block;
+    position:absolute;
+    /* justify-content: space-between; */
+    /* margin-left:17%;
+     */
+     float:right;
+    margin-left: 50%;
+    margin-bottom: 0px;
+   }
+   .portimgSmall :hover{
+   
+    cursor: default;
+    opacity:2;
+    border-radius:110%;
+    /* -webkit-border-radius: 50% red; */
+    box-shadow: 2px 2px 40px var(--secondary-color);
+    /* animation: slideright 3s ease forwards  ; */
+    /* transform: scale(1.2); */
+    z-index: 100;
+ 
+   }
+   .intro{
+    display: none;
+    
+   }
+.intro2{
+    display: flex;
+color: white;
+font: 100;
+font-size: 15px ;
+margin-top: 20px;
+align-items: center;
+  }
+  .social-icon
+  {
+         margin-left: 38%;
+                   
+  }
+    .edu-head{
+        font-size: 30px;
+    
+    }
+    h1{ 
+        font-size: 20px;
+    }
+    h4{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 10px;
+    }
+    .home-content
+    {
+        line-height: normal;
+    }
+    .home-content .motion1{
+        font-size: 30px;
+        /* line-height: 100px; */
+        /* color: white; */
+      
+        
+    }
+    .home-content .motion2{
+        font-size: 30px;
+        font-weight: 600;
+        font-family:'Courier New', Courier, monospace;
+        color: var(--secondary-color);
+        /* line-height: 1.2; */
+        text-shadow: 2px 2px 40px var(--secondary-color)cyan;
+        position: relative;
+    }
+    
+
+  }
+.p-about
+{   
+    font-size:16px ;
+    padding: 15px 0px 25px 85px;
+    /* background: red; */
+    line-height: 1.5;
+    margin-left:5px;
+    display:inline-block;
+    
+    /* float: right;
+    text-align: right; */
+}
+.p-about:hover{
+    position: relative;
+    
+    /*box-shadow: 2px 2px 30px cyan;*/
+    /* text-align:center; */
+}
+.aboutimg{
+    margin-top:30vh;
+    width: 50vh;
+    height: 50vh;
+    background-image: url("aboutport1.png");
+    background-size: 100% 100%;
+    animation: image-motion 10s linear infinite ;
+    margin-left: 50%;
+
+}
+.navbar{
+    position:sticky;
+    flex: end;
+}
+}
+
+
+/*  button section here */
+
+    .btn-box a 
+    {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    color: #00abf0;
+     border: 2px solid skyblue;
+    border-radius: 75px;
+    display: inline-flex;
+    font-size: 16px;
+    color: #1f5b7d;
+    text-decoration: none;
+    font-weight: 600;   
+    letter-spacing: 1px;  
+    z-index:8;
+  }
+    .btn-box a::before
+    {
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        width: 0%;
+        height: 100%;
+        background-color: rgb(19, 180, 180);
+        z-index:-1;
+        transition: .5s;
+    }
+    .btn-box a:hover:before
+    {
+width: 100%;
+border-radius: 75px;
+
+    }
+    .social-icon
+    {
+            position: relative ;
+            bottom: 40px;
+            width: 170px;
+            background: transparent;
+            display:flex;
+            justify-content: space-around;
+            
+    }
+    .social-icon a{
+        position: relative;
+        display:inline-flex;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid lightblue;
+        border-radius: 50px;
+        font-size:30px;
+        color:#00abf0;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        z-index:1;
+        overflow: hidden;
+        transition: .5s;
+    
+    }
+    .social-icon a:hover{
+        color:#00abf0;
+        box-shadow: 2px 2px 40px cyan;
+    }
+
+    .social-icon a::before{
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #fdfeff;
+       /* box-shadow: 2px 2px 40px cyan;*/
+        z-index:-1;
+        transition: .5s;
+       
+       
+    }
+    .social-icon a:hover::before
+    {
+        width: 100%;
+        border-radius: 50px;
+        box-shadow: 2px 2px 40px cyan;
+       
+    }
+   /* key frames start here */
+
+@keyframes slideright {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes slideupward {
+
+     0%{
+        transform: translateY(-100px);
+        opacity: 0;
+      
+    }
+    100%
+    {
+        transform: translateY(0px);
+        opacity:1;
+    }
+    
+}
+@keyframes slidecolor {
+    0%
+    {
+        transform: translateX(-100px);
+    }
+    100%{
+    transform: translateX(0px);
+    text-decoration:none;
+
+        
+    }
+    
+}
+@keyframes image-motion {
+    25%{
+      background-image: url("portfolio-modified.png");  
+    }
+    50%{
+      background-image: url("aboutport1.png");  
+    }
+        75%{
+      background-image: url("aboutport2.png");  
+    }
+    100%{
+      background-image: url("aboutport3.png");  
+    }
+    
+    
+}
+
+
