@@ -1,6 +1,6 @@
 var typed= new Typed(".motion1",
 {
-    strings:["Hi,I'm Aditya Saini",''],
+    strings:["I'm Aditya Saini",''],
     typeSpeed:100,
     backSpeed:100,
     backDelay:1000,
@@ -11,21 +11,31 @@ var typed =new Typed ('.motion2',
 {
     strings:['Web Developer',' Java developer'],
     typeSpeed:100,
-    backSpeed:100,
-    backDelay:1000,
+    backSpeed:90,
+    backDelay:900,
     loop:true
 } 
 );
 
-// var typed =new Typed ('.logo',
-// {
-//     strings:["Aditya's Portfolio",'WELCOME EVERYONE'],
-//     typeSpeed:80,
-//     backSpeed:40,
-//     lay:0,
-//     loop:true
-// }
-// ); 
+var typed =new Typed ('.logo',
+{
+    strings:["Aditya's Portfolio",],
+    typeSpeed:80,
+    backSpeed:40,
+    backDelay:1000,
+    loop:false
+}
+); 
+function hamburg(){
+    const navbar = document.querySelector(".dropdown")
+    navbar.style.transform = "translateY(0px)"
+}
+
+function cancel(){
+    const navbar = document.querySelector(".dropdown")
+    navbar.style.transform = "translateY(-500px)"
+}
+
 var daylight =document.getElementById("mode");
 daylight.onclick=function( )
 {
