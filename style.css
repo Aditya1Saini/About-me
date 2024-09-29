@@ -457,11 +457,11 @@ h3{
 
 
    /* tablet screen size  */
-@media only screen and (max-device-width:992px)
+@media only screen and (min-device-width:599px) and (max-device-width:767px)
 {
 .navbar {
  flex-direction: row;
- padding: 10px 0px;
+ padding: 10px 0px 10px ;
  width: 100%;
  /* background-color: #00abf0; */
 }
@@ -481,10 +481,44 @@ h3{
     /* display: none; */
     margin-top: 10vh;
 }
+
+}
+/* 
+tablet 2
+ */
+ @media only screen and (min-device-width:425px) and (max-device-width:768px)
+{
+.home-content .newmotion1{
+    font-size:35px ;
+    display:contents;
+    margin: top 100vh;
+}
+.home-content .newmotion2{
+    font-size:35px ;
+    display: contents;
+    position:fixed;
+    line-height: 0%;
+
+}
+.home-content .motion1{
+    display: none;
+}
+.home-content .motion2{
+    display: none;
+}
+.intro{
+    display:none;
+    position: fixed;
+    /* margin-top: 100vh; */
+}
+.home-content .portimg{
+    display: none;
+}
 } 
 
+
 /* smart phone  */
-@media only screen and (max-device-width:600px) 
+@media only screen and  (min-device-width:320px)and (max-device-width:600px) 
 {   
     .ham-menu{
         display:flex;
@@ -631,7 +665,7 @@ align-items: center;
     .home-content .newmotion1{
         font-size: 35px;
         display:flex;
-        margin-top: 30vh;
+        margin-top:50vh;
         /* text-align: center;     */
         /* background: red; */
         margin-left:35px;
@@ -653,6 +687,7 @@ align-items: center;
     }
     .home .portimgSmall{
         height:30vh;
+        justify-content: space-around;
     }
    .social-icon{
     margin-top: 10vh;
