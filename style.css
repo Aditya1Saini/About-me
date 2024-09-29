@@ -3,13 +3,13 @@
 html{
     scroll-behavior: smooth;
 }
-  /* *{
-    margin: 0px;
-    padding: 0px;
+  *{
+    /* margin: 0px;
+    padding: 10px 10px 10px 10px ; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 
-} */
+}
 :root{
     --primary-color:black;
     --secondary-color:cyan;
@@ -181,7 +181,7 @@ position: absolute;
 
 .header
 {
-    position: fixed;
+    position: relative;
    display: inline-flex;
     top: 0; 
     left: 0;
@@ -203,7 +203,8 @@ position: absolute;
 
 }
 .logo
-{   position: relative;
+{
+       position: relative;
   background:transparent;
    font-size: 35px;
     font-family: -webkit-body;
@@ -211,7 +212,7 @@ position: absolute;
     text-decoration: none;
     font-weight: 600;
     animation: slidecolor 1s ease forwards ;
-    margin-left: 20px;
+    margin-left: 5px;
 
 
 }
@@ -243,7 +244,6 @@ position: absolute;
   /* text-align:left;*/
   padding-right: 30px;   
   animation: slideupward 3s ease forwards ;
-  
     
 }
 .navbar a{
@@ -252,6 +252,7 @@ position: absolute;
     position: relative;
     justify-items:space-around;
     margin-left: 20px;
+    
     
 }
 .navbar a::after
@@ -305,6 +306,7 @@ background-color: var(--secondary-color);
     background-color: rgb(19, 180, 180);
 }
 
+
 #mode{
     
     cursor: pointer;
@@ -319,9 +321,9 @@ i.bx.bx-moon.bx-tada{
 .home{
     position: relative;
  display: flex;
- align-items: center;
- height: 100vh;
- pad: 0 10%;
+ /* align-items: center; */
+ /* height: 100vh; */
+ /* pad: 0 10%; */
  font-size: larger;
  
 }
@@ -351,9 +353,13 @@ i.bx.bx-moon.bx-tada{
   
     
 }
+.home-content .newmotion1{
+    display: none;
+}
+
 .home-content p{
     font-size:18px;
-   margin: 20px 0 40px;
+   margin: 20px 0px 40px;
 }
 .home-content .btn-box{
     display: flex;
@@ -439,26 +445,18 @@ h3{
 /*  image port */
 .portimgSmall{
     display: none;
+    /* margin-top: 0px; */
    }
-.newmotion1 {
-display: none;
-}
-. newmotion2 
- {display:none;}
-@media only screen and (max-width:1080px) 
-{
 
 
-}
-
-@media only screen 
-and (min-device-width: 320px)
-and (max-device-width:480px)
+   /* tablet screen size  */
+@media only screen and (max-device-width:992px)
 {
 .navbar {
  flex-direction: row;
  padding: 10px 0px;
- background-color: #00abf0;
+ width: 100%;
+ /* background-color: #00abf0; */
 }
 .aboutimg
 
@@ -474,9 +472,12 @@ and (max-device-width:480px)
 }
 .social-icon{
     /* display: none; */
+    margin-top: 10vh;
 }
 } 
-@media only screen and (max-width:700px) 
+
+/* smart phone  */
+@media only screen and (max-device-width:600px) 
 {   
     .ham-menu{
         display:flex;
@@ -495,13 +496,14 @@ and (max-device-width:480px)
     display:block;
 }
 .logo{
-    font-size: 40px;
+    font-size: 30px;
     position: relative;
-    margin-left: 50px;
+    margin-left: 10px;
 }
 .navbar
 {
    display: none;
+   width: 100%;
 }
 .navbar a:hover{
     width: 50%;
@@ -509,13 +511,24 @@ background-color:transparent;
 align-items: center;
 
 }
-.home-content .motion1{
-   font: size 40px;
-   /* margin-left: 3px; */
-   color: white;
+.home-content .motion1 {
+    display: none;
 }
- .home-content .motion2{
+.home-content .motion2{
+    display: none;
+}
+.home-content .newmotion1{
+   font-size: 35px;
+   display: flex;
+   /* margin-left: 3px; */
+   /* color: white; */
+}
+ .home-content .newmotion2{
     font-size:35px;
+    color:var(--secondary-color);
+    line-height: 1.2;
+    text-shadow: cyan;
+    position: relative;
 }
 .home-content .intro{
     font-size: 10px;
@@ -536,24 +549,30 @@ align-items: center;
     z-index: 100;
     
 }
- .portimg{
-    max-width: 300px;
-    max-height: 300px;
-    align-items: center;
+ .portimg .img{
+    /* max-width: 300px; */
+    /* max-height: 300px; */
+   
     
 }
 .portimg {
     display: none;
 }
 .portimgSmall{
-    display:block;
+    display:flex;
     position:absolute;
     /* justify-content: space-between; */
     /* margin-left:17%;
      */
-     float:right;
-    margin-left: 50%;
-    margin-bottom: 0px;
+     /* float:right; */
+     width: 100%;
+     /* background: red; */
+     padding: 0px 40px 0px ;
+
+     /* justify-self: center; */
+    /* margin-left: 25%; */
+    /* margin-bottom: 0px; */
+    /* align-items:center; */
    }
    .portimgSmall :hover{
    
@@ -597,45 +616,42 @@ align-items: center;
     h3{
         font-size: 10px;
     }
-    .home-content
+    .backarrow
     {
-        line-height: normal;
-    }
-    .home-content .motion1{
-        font-size: 30px;
-        /* line-height: 100px; */
-        /* color: white; */
-      
+        font-size: 25px;
         
     }
-    .home-content .motion2{
-        font-size: 30px;
-        font-weight: 600;
-        font-family:'Courier New', Courier, monospace;
-        color: var(--secondary-color);
-        /* line-height: 1.2; */
-        text-shadow: 2px 2px 40px var(--secondary-color)cyan;
-        position: relative;
-    }
     .home-content .newmotion1{
-display: content;
-        font-size: 30px;
+        font-size: 35px;
+        display:flex;
+        margin-top: 30vh;
+        /* text-align: center;     */
+        /* background: red; */
+        margin-left:35px;
+    /* color: white; */
         /* line-height: 100px; */
         /* color: white; */
       
         
     }
     .home-content .newmotion2{
-        font-size: 30px;
-display: content;
+        font-size:25px;
         font-weight: 600;
-        font-family:'Courier New', Courier, monospace;
-        color: var(--secondary-color);
-        /* line-height: 1.2; */
+        /* color: var(--secondary-color); */
+        line-height:0%;
+        /* background: red; */
+        margin-left: 60px;
         text-shadow: 2px 2px 40px var(--secondary-color)cyan;
         position: relative;
     }
-    
+    .home .portimgSmall{
+        height:30vh;
+    }
+   .social-icon{
+    margin-top: 10vh;
+    margin-left: 25%;
+   }
+    /* ------------------------------------------------- */
 
   }
 .p-about
@@ -667,10 +683,9 @@ display: content;
 
 }
 .navbar{
-    position:sticky;
-    flex: end;
+    position: relative;
 }
-}
+
 
 
 /*  button section here */
