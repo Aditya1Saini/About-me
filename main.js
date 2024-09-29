@@ -1,4 +1,4 @@
-var typed= new Typed(".motion1","newmotion1"
+var typed= new Typed(".motion1",
 {
     strings:["I'm Aditya Saini",''],
     typeSpeed:100,
@@ -7,7 +7,26 @@ var typed= new Typed(".motion1","newmotion1"
     loop:true
 }
 );
-var typed =new Typed ('.motion2'," newmotion2 "
+var typed= new Typed(".newmotion1",
+    {
+        strings:["Hi , I'm Aditya Saini"],
+        typeSpeed:100,
+        backSpeed:100,
+        backDelay:1000,
+        loop:true
+    }
+    );
+    var typed =new Typed (".motion2",
+        {
+            strings:['Web Developer',' Java developer'],
+            typeSpeed:100,
+            backSpeed:90,
+            backDelay:900,
+            loop:true
+        } 
+        );
+
+var typed =new Typed (".newmotion2",
 {
     strings:['Web Developer',' Java developer'],
     typeSpeed:100,
