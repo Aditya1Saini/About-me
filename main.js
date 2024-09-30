@@ -1,6 +1,6 @@
 var typed= new Typed(".motion1",
 {
-    strings:["I'm Aditya Saini",''],
+    strings:["I'm Aditya Saini","Welcome to my portfolio"],
     typeSpeed:100,
     backSpeed:100,
     backDelay:1000,
