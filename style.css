@@ -468,6 +468,15 @@ h3{
     width:100%;
    
    }
+  @media only screen and (min-device-width:1440px){
+    .eduimg{
+        display: none;
+        
+    }
+    .eduimg2{
+        display: none;
+    }
+
    @media only screen and (min-device-width:1024px) and (max-device-width:1440px)
 {
 .eduimg2{
