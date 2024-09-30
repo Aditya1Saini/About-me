@@ -304,6 +304,8 @@ background-color: var(--secondary-color);
 
 .dropdown .links a:hover{
     background-color: rgb(19, 180, 180);
+    color:  black ;
+   font-weight: 500;
 }
 
 
@@ -395,6 +397,11 @@ h1{
     color: white;
     font-size: 50px;
 }
+h2{ 
+    color: white;
+    font-size: 30px;
+}
+
 h4{
     color: cyan;
     font-size:25px;
@@ -455,10 +462,33 @@ h3{
     /* margin-top: 0px; */
    }
 
+   .eduimg{
+    height: 80px;
+    display: flex;
+    width:100%;
+   
+   }
+   @media only screen and (min-device-width:1024px) and (max-device-width:1440px)
+{
+.eduimg2{
+    display: none;
+   }
+   .edutext{
+    text-align: center;
+   }
+}
+   
+   /* media query start here ---------------------------------------------------------------------------------------- */
 
    /* tablet screen size  */
 @media only screen and (min-device-width:599px) and (max-device-width:767px)
 {
+    .edu-head .eduimg2{
+        display: none;
+       }
+       .eduimg{
+        display: none;
+       }
 .navbar {
  flex-direction: row;
  padding: 10px 0px 10px ;
@@ -488,16 +518,29 @@ tablet 2
  */
  @media only screen and (min-device-width:425px) and (max-device-width:768px)
 {
+     .eduimg2{
+       display: none;
+       
+       }
+       .edutext{
+        text-align: center;
+       }
+      .edu-head .eduimg
+       {
+        display:none;
+       }
 .home-content .newmotion1{
     font-size:35px ;
-    display:contents;
-    margin: top 100vh;
+    display:flex;
+    margin-top: 70vh;
 }
 .home-content .newmotion2{
-    font-size:35px ;
-    display: contents;
+    font-size:30px ;
+    display: flex;
     position:fixed;
     line-height: 0%;
+    color: cyan;
+    
 
 }
 .home-content .motion1{
@@ -511,19 +554,24 @@ tablet 2
     position: fixed;
     /* margin-top: 100vh; */
 }
-.home-content .portimg{
-    display: none;
+
+
+
 }
-} 
-
-
 /* smart phone  */
 @media only screen and  (min-device-width:320px)and (max-device-width:600px) 
 {   
+    .eduimg2{
+        height: 80px;
+        display: flex;
+        width:100;
+    }
     .ham-menu{
         display:flex;
     }
-    
+    .eduimg{
+        display: none;
+    }
     #menu{
         display:none; 
         width: 100%;
@@ -694,6 +742,7 @@ align-items: center;
     margin-left: 25%;
    }
     /* ------------------------------------------------- */
+
 
   }
 .p-about
