@@ -468,19 +468,26 @@ h3{
     width:100%;
    
    }
-  @media only screen and (min-device-width:1440px){
+   @media only screen and (min-device-width:1440px){
     .eduimg{
-        display: none;
+        display: flex;
         
     }
     .eduimg2{
         display: none;
     }
+    .edutext{
+        text-align: center;
+    }
 
+   }
    @media only screen and (min-device-width:1024px) and (max-device-width:1440px)
 {
 .eduimg2{
     display: none;
+   }
+   .eduimg{
+    display: flex;
    }
    .edutext{
     text-align: center;
@@ -492,8 +499,11 @@ h3{
    /* tablet screen size  */
 @media only screen and (min-device-width:599px) and (max-device-width:767px)
 {
-    .edu-head .eduimg2{
+    .eduimg2{
         display: none;
+       }
+       .edutext{
+        text-align: center;
        }
        .eduimg{
         display: none;
@@ -534,7 +544,7 @@ tablet 2
        .edutext{
         text-align: center;
        }
-      .edu-head .eduimg
+      .eduimg
        {
         display:none;
        }
